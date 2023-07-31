@@ -21,6 +21,8 @@ class OrderDataVC: UIViewController {
     @IBOutlet weak var orderDataIcon: UIImageView!
     @IBOutlet weak var orderDataBackView: UIView!
     
+    
+    
     // collectionView
     @IBOutlet weak var truckTypeCollectionView: UICollectionView!
     
