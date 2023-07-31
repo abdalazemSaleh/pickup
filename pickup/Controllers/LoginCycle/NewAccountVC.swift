@@ -87,49 +87,49 @@ class NewAccountVC: UIViewController {
             return
         }
         
-        RegisterApi.shared.registerApi(firstName: firstName, lastName: lastName, email: email, password: password, passwordConfiramtion: passwordConfirmation, phone: "123123123") { result in
-            switch result {
-
-            case .success(let response):
-                print(response)
-                
-                if response.accessToken != nil {
-                    let alert = UIAlertController(title: "logged", message: "created", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "ok", style: .default)
-                    alert.addAction(action)
-                    self.present(alert, animated: true)
-                    print(response.accessToken ?? "no access token")
-                    
-                }else {
-                    
-                    let alert = UIAlertController(title: "error", message: "error while register", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "ok", style: .default)
-                    alert.addAction(action)
-                    self.present(alert, animated: true)
+//        RegisterApi.shared.registerApi(firstName: firstName, lastName: lastName, email: email, password: password, passwordConfiramtion: passwordConfirmation, phone: "123123123") { result in
+//            switch result {
+//
+//            case .success(let response):
+//                print(response)
+//                
+//                if response.accessToken != nil {
+//                    let alert = UIAlertController(title: "logged", message: "created", preferredStyle: .alert)
+//                    let action = UIAlertAction(title: "ok", style: .default)
+//                    alert.addAction(action)
+//                    self.present(alert, animated: true)
 //                    print(response.accessToken ?? "no access token")
-                    
-//                    if let emailError = response.email, !emailError.isEmpty, let error = response.email?.first {
-//                        self.showErrorMessage(message: error)
-//                    }
-//
-//                    if let firstNameError = response.fName, !firstNameError.isEmpty, let error = response.fName?.first {
-//                        self.showErrorMessage(message: error)
-//                    }
-//
-//                    if let lastNameError = response.lName, !lastNameError.isEmpty, let error = response.lName?.first {
-//                        self.showErrorMessage(message: error)
-//                    }
-//
-//                    if let passwordError = response.password, !passwordError.isEmpty, let error = response.password?.first {
-//                        self.showErrorMessage(message: error)
-//                    }
-                    
-                    
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+//                    
+//                }else {
+//                    
+//                    let alert = UIAlertController(title: "error", message: "error while register", preferredStyle: .alert)
+//                    let action = UIAlertAction(title: "ok", style: .default)
+//                    alert.addAction(action)
+//                    self.present(alert, animated: true)
+////                    print(response.accessToken ?? "no access token")
+//                    
+////                    if let emailError = response.email, !emailError.isEmpty, let error = response.email?.first {
+////                        self.showErrorMessage(message: error)
+////                    }
+////
+////                    if let firstNameError = response.fName, !firstNameError.isEmpty, let error = response.fName?.first {
+////                        self.showErrorMessage(message: error)
+////                    }
+////
+////                    if let lastNameError = response.lName, !lastNameError.isEmpty, let error = response.lName?.first {
+////                        self.showErrorMessage(message: error)
+////                    }
+////
+////                    if let passwordError = response.password, !passwordError.isEmpty, let error = response.password?.first {
+////                        self.showErrorMessage(message: error)
+////                    }
+//                    
+//                    
+//                }
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
     }
     
     

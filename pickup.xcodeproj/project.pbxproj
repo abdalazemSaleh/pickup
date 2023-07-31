@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B573E931DC9860460EB2AF7D /* Pods_pickup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A781749481D8AA026644195 /* Pods_pickup.framework */; };
+		7F22C8DB2A77CD0F009A2E6C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F22C8DA2A77CD0F009A2E6C /* Alamofire */; };
+		7F22C8DE2A77CD5E009A2E6C /* CountryPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = 7F22C8DD2A77CD5E009A2E6C /* CountryPickerView */; };
 		D434B1822A5B819300771B22 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434B1812A5B819300771B22 /* OnboardingVC.swift */; };
 		D435171B2A5AA29400BEF8A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D435171A2A5AA29400BEF8A2 /* AppDelegate.swift */; };
 		D435171D2A5AA29400BEF8A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D435171C2A5AA29400BEF8A2 /* SceneDelegate.swift */; };
@@ -92,9 +93,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0881798BB2E3F3C5AE638B35 /* Pods-pickup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickup.debug.xcconfig"; path = "Target Support Files/Pods-pickup/Pods-pickup.debug.xcconfig"; sourceTree = "<group>"; };
-		4A781749481D8AA026644195 /* Pods_pickup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C13082D800ACCF864F4F8678 /* Pods-pickup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickup.release.xcconfig"; path = "Target Support Files/Pods-pickup/Pods-pickup.release.xcconfig"; sourceTree = "<group>"; };
 		D434B1812A5B819300771B22 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		D43517172A5AA29400BEF8A2 /* pickup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D435171A2A5AA29400BEF8A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,30 +183,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B573E931DC9860460EB2AF7D /* Pods_pickup.framework in Frameworks */,
+				7F22C8DE2A77CD5E009A2E6C /* CountryPickerView in Frameworks */,
+				7F22C8DB2A77CD0F009A2E6C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C7775DAB1B2BBEF7B4C78D35 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A781749481D8AA026644195 /* Pods_pickup.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA8CB7FB8502BA4C079E360E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0881798BB2E3F3C5AE638B35 /* Pods-pickup.debug.xcconfig */,
-				C13082D800ACCF864F4F8678 /* Pods-pickup.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D434B17A2A5B61FA00771B22 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,8 +204,6 @@
 			children = (
 				D43517192A5AA29400BEF8A2 /* pickup */,
 				D43517182A5AA29400BEF8A2 /* Products */,
-				CA8CB7FB8502BA4C079E360E /* Pods */,
-				C7775DAB1B2BBEF7B4C78D35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -595,17 +575,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D435172E2A5AA29500BEF8A2 /* Build configuration list for PBXNativeTarget "pickup" */;
 			buildPhases = (
-				83BEC58792BF76532294F089 /* [CP] Check Pods Manifest.lock */,
 				D43517132A5AA29400BEF8A2 /* Sources */,
 				D43517142A5AA29400BEF8A2 /* Frameworks */,
 				D43517152A5AA29400BEF8A2 /* Resources */,
-				ACAE403DDD1BAD1B72E8BDA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = pickup;
+			packageProductDependencies = (
+				7F22C8DA2A77CD0F009A2E6C /* Alamofire */,
+				7F22C8DD2A77CD5E009A2E6C /* CountryPickerView */,
+			);
 			productName = pickup;
 			productReference = D43517172A5AA29400BEF8A2 /* pickup.app */;
 			productType = "com.apple.product-type.application";
@@ -626,7 +608,7 @@
 				};
 			};
 			buildConfigurationList = D43517122A5AA29400BEF8A2 /* Build configuration list for PBXProject "pickup" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -634,6 +616,10 @@
 				Base,
 			);
 			mainGroup = D435170E2A5AA29400BEF8A2;
+			packageReferences = (
+				7F22C8D92A77CD0F009A2E6C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7F22C8DC2A77CD5E009A2E6C /* XCRemoteSwiftPackageReference "CountryPickerView" */,
+			);
 			productRefGroup = D43517182A5AA29400BEF8A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -666,48 +652,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		83BEC58792BF76532294F089 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pickup-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ACAE403DDD1BAD1B72E8BDA0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pickup/Pods-pickup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pickup/Pods-pickup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pickup/Pods-pickup-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D43517132A5AA29400BEF8A2 /* Sources */ = {
@@ -922,7 +866,6 @@
 		};
 		D435172F2A5AA29500BEF8A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0881798BB2E3F3C5AE638B35 /* Pods-pickup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -951,7 +894,6 @@
 		};
 		D43517302A5AA29500BEF8A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C13082D800ACCF864F4F8678 /* Pods-pickup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1000,6 +942,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F22C8D92A77CD0F009A2E6C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7F22C8DC2A77CD5E009A2E6C /* XCRemoteSwiftPackageReference "CountryPickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kizitonwose/CountryPickerView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F22C8DA2A77CD0F009A2E6C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F22C8D92A77CD0F009A2E6C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7F22C8DD2A77CD5E009A2E6C /* CountryPickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F22C8DC2A77CD5E009A2E6C /* XCRemoteSwiftPackageReference "CountryPickerView" */;
+			productName = CountryPickerView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D43517232A5AA29400BEF8A2 /* pickup.xcdatamodeld */ = {

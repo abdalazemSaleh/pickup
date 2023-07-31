@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+//import SwiftyJSON
 
 
 class RegisterApi {
@@ -32,71 +32,71 @@ class RegisterApi {
     }
     
     
-    func registerApi(firstName: String, lastName: String, email: String, password: String, passwordConfiramtion: String, phone: String?, combletion: @escaping (Result<RegisterModel, Error>) -> Void) {
-      
-//        let requestBody = MyParms()
-//        let encoder = JSONEncoder()
-//        guard let requestBodyData = try? encoder.encode(requestBody) else {
-//            // Handle the error if encoding fails
-//            return
-//        }
-//
-//
-//        AF.upload(requestBodyData, to: "https://pickupksa.com/PickUp/api/user/register")
-//            .validate()
-//            .responseDecodable(of: RegisterModel.self) { response in
-//                switch response.result {
-//                case .success(let data):
-//                    // Handle the decoded data here
-//                    print(data)
-//                case .failure(let error):
-//                    // Handle the error
-//                    print(error)
-//                }
+//    func registerApi(firstName: String, lastName: String, email: String, password: String, passwordConfiramtion: String, phone: String?, combletion: @escaping (Result<RegisterModel, Error>) -> Void) {
+//      
+////        let requestBody = MyParms()
+////        let encoder = JSONEncoder()
+////        guard let requestBodyData = try? encoder.encode(requestBody) else {
+////            // Handle the error if encoding fails
+////            return
+////        }
+////
+////
+////        AF.upload(requestBodyData, to: "https://pickupksa.com/PickUp/api/user/register")
+////            .validate()
+////            .responseDecodable(of: RegisterModel.self) { response in
+////                switch response.result {
+////                case .success(let data):
+////                    // Handle the decoded data here
+////                    print(data)
+////                case .failure(let error):
+////                    // Handle the error
+////                    print(error)
+////                }
+////            }
+//        
+//  
+//        
+//            
+////                let params = [
+////                            "f_name": firstName,
+////                            "l_name": lastName,
+////                            "phone": "55555555",
+////                            "email": email,
+////                            "password": password,
+////                            "password_confirmation": passwordConfiramtion
+////                        ]
+//                //
+//                //        let request = MyRe
+//                //
+//                //        AF.uplod(r)
+//                
+//        let url = "https://pickupksa.com/PickUp/api/user/register"
+//        let params = [
+//            "f_name": firstName,
+//            "l_name": lastName,
+//            "phone": "55555555",
+//            "email": email,
+//            "password": password,
+//            "password_confirmation": passwordConfiramtion
+//        ]
+//        AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default).responseData { response in
+//            
+//                
+//            let jsonData = JSON(response.value ?? "")
+//            print(jsonData)
+//            let decoder = JSONDecoder()
+//                
+//            do {
+//            let newAccount = try decoder.decode(RegisterModel.self, from: jsonData.rawData())
+//                combletion(.success(newAccount))
+//            } catch let error {
+//                combletion(.failure(error))
 //            }
-        
-  
-        
-            
-//                let params = [
-//                            "f_name": firstName,
-//                            "l_name": lastName,
-//                            "phone": "55555555",
-//                            "email": email,
-//                            "password": password,
-//                            "password_confirmation": passwordConfiramtion
-//                        ]
-                //
-                //        let request = MyRe
-                //
-                //        AF.uplod(r)
-                
-        let url = "https://pickupksa.com/PickUp/api/user/register"
-        let params = [
-            "f_name": firstName,
-            "l_name": lastName,
-            "phone": "55555555",
-            "email": email,
-            "password": password,
-            "password_confirmation": passwordConfiramtion
-        ]
-        AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default).responseData { response in
-            
-                
-            let jsonData = JSON(response.value ?? "")
-            print(jsonData)
-            let decoder = JSONDecoder()
-                
-            do {
-            let newAccount = try decoder.decode(RegisterModel.self, from: jsonData.rawData())
-                combletion(.success(newAccount))
-            } catch let error {
-                combletion(.failure(error))
-            }
-                
-         }
-        
-    }
+//                
+//         }
+//        
+//    }
     
     
     

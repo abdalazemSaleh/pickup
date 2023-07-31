@@ -205,13 +205,10 @@ class OrderDataVC: UIViewController {
                 rowView.layer.borderWidth = 1
             }
         }
-        
-        
     }
     
     // check active check marks
     private func checkCheckMarks(sender: UIButton, image: [UIImageView]) {
-        
         image.forEach({$0.image = UIImage(systemName: "checkmark.seal")})
         image.forEach({$0.tintColor = .darkGray})
         for rowView in image {

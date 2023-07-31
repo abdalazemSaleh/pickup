@@ -66,45 +66,45 @@ class LoginVC: UIViewController {
             print("enter password")
             return
         }
-        UserApi.shared.loginUser(phone: phoneNumber, password: password) { result in
-            
-            switch result {
-
-            case .success(let response):
-                print(response)
-
-                if response.accessToken != nil {
-                    
-                    self.setUserDefaults(response: response.accessToken!, key: "token")
-                    self.setUserDefaults(response: response.user!.fName, key: "firstName")
-                    self.setUserDefaults(response: response.user!.lName, key: "lastName")
-//                    UserDefaults.standard.set(response.accessToken, forKey: "token")
-
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBar") as! MainTabBar
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: true)
-//                    let alert = UIAlertController(title: "logged", message: "created", preferredStyle: .alert)
-//                    let action = UIAlertAction(title: "ok", style: .default)
-//                    alert.addAction(action)
-//                    self.present(alert, animated: true)
-//                    print(response.accessToken ?? "no access token")
-                }else {
-                    
-                    if let phoneError = response.phone, !phoneError.isEmpty, let error = phoneError.first {
-                        
-                        self.showErrorMessage(message: error)
-                    }
-                    if let passwordError = response.password, !passwordError.isEmpty, let error = passwordError.first {
-                        
-                        self.showErrorMessage(message: error)
-                    }
-
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-
-        }
+//        UserApi.shared.loginUser(phone: phoneNumber, password: password) { result in
+//            
+//            switch result {
+//
+//            case .success(let response):
+//                print(response)
+//
+//                if response.accessToken != nil {
+//                    
+//                    self.setUserDefaults(response: response.accessToken!, key: "token")
+//                    self.setUserDefaults(response: response.user!.fName, key: "firstName")
+//                    self.setUserDefaults(response: response.user!.lName, key: "lastName")
+////                    UserDefaults.standard.set(response.accessToken, forKey: "token")
+//
+//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBar") as! MainTabBar
+//                    vc.modalPresentationStyle = .fullScreen
+//                    self.present(vc, animated: true)
+////                    let alert = UIAlertController(title: "logged", message: "created", preferredStyle: .alert)
+////                    let action = UIAlertAction(title: "ok", style: .default)
+////                    alert.addAction(action)
+////                    self.present(alert, animated: true)
+////                    print(response.accessToken ?? "no access token")
+//                }else {
+//                    
+//                    if let phoneError = response.phone, !phoneError.isEmpty, let error = phoneError.first {
+//                        
+//                        self.showErrorMessage(message: error)
+//                    }
+//                    if let passwordError = response.password, !passwordError.isEmpty, let error = passwordError.first {
+//                        
+//                        self.showErrorMessage(message: error)
+//                    }
+//
+//                }
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//
+//        }
     }
     
     private func setUserDefaults(response: String, key: String) {

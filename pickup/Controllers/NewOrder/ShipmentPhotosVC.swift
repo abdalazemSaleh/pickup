@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Gallery
 import PhotosUI
 
 

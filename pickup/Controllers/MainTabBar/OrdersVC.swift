@@ -38,7 +38,7 @@ class OrdersVC: UIViewController {
         super.viewDidLoad()
         
         configureCollectionView()
-        getActiveOrders()
+//        getActiveOrders()
 
         // Do any additional setup after loading the view.
     }
@@ -63,17 +63,17 @@ class OrdersVC: UIViewController {
     }
     
     let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3BpY2t1cGtzYS5jb20vUGlja1VwL2FwaS91c2VyL2xvZ2luIiwiaWF0IjoxNjg5NTA3MzkxLCJleHAiOjE2ODk1MTA5OTEsIm5iZiI6MTY4OTUwNzM5MSwianRpIjoiVDR3MDlCUVpIZHExaTNjdSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HX2qnjeTTjVdwlzObacgfGqSy0pp6hVBOxUKo6rS7S8"
-    private func getActiveOrders() {
-        OrderTypesApi.shared.getActiveOrders(token: token) { result in
-            switch result {
-                
-            case .success(let response):
-                print(response)
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
+//    private func getActiveOrders() {
+//        OrderTypesApi.shared.getActiveOrders(token: token) { result in
+//            switch result {
+//
+//            case .success(let response):
+//                print(response)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
     
     //MARK: - Actions
 
