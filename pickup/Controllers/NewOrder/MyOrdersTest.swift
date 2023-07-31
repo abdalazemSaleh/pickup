@@ -15,7 +15,6 @@ class MyOrdersTest: UIViewController {
     @IBOutlet var orderViews: [UIView]!
     @IBOutlet var orderInspectorViews: [UIView]!
     
-    
     //MARK: - Vars
     var orderData: [OrderTypeModel] = [
         OrderTypeModel(orderTypeTitle: "توصيل أغراضك", orderLocationFrom: "من شارع الملك فهد ", orderLocationTo: "الي شارع الملك عبد العزيز ", orderDate: "2023/12/3", buttonDetailsBackView: UIView()),
