@@ -12,7 +12,6 @@ protocol sendShipmentTypeProtocol: AnyObject {
 }
 
 class OrderDataVC: UIViewController {
-
     
     //MARK: - OutLets
     @IBOutlet weak var confirmOrderIcon: UIImageView!
