@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChargeCollectionViewCell" id="gTV-IL-0wX" customClass="ChargeCollectionViewCell" customModule="pickup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="83"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-Wl-8Sn">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شحن رصيد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5B-LZ-euP">
+                                <rect key="frame" x="267" y="15.999999999999998" width="75" height="19.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="MUt-uJ-mR4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.4549019608" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم شحن رصيد بتاريخ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-Wy-PHQ">
+                                <rect key="frame" x="200" y="45" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uLT-fm-ApB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN4-dw-zRc">
+                                <rect key="frame" x="8" y="31.666666666666671" width="334" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/3/2022" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z89-pb-hQd">
+                                <rect key="frame" x="112" y="45" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4WL-OW-O5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aHc-Wy-PHQ" firstAttribute="top" secondItem="P5B-LZ-euP" secondAttribute="bottom" constant="9.6699999999999999" id="7yD-0s-mxe"/>
+                            <constraint firstAttribute="bottom" secondItem="z89-pb-hQd" secondAttribute="bottom" constant="17" id="Eyu-mr-RzI"/>
+                            <constraint firstItem="aHc-Wy-PHQ" firstAttribute="leading" secondItem="z89-pb-hQd" secondAttribute="trailing" constant="8" id="Kj8-xY-FbF"/>
+                            <constraint firstItem="P5B-LZ-euP" firstAttribute="top" secondItem="PTr-Wl-8Sn" secondAttribute="top" constant="16" id="bbo-5I-PVI"/>
+                            <constraint firstAttribute="trailing" secondItem="P5B-LZ-euP" secondAttribute="trailing" constant="8" id="cYO-9w-dGR"/>
+                            <constraint firstItem="NN4-dw-zRc" firstAttribute="centerX" secondItem="PTr-Wl-8Sn" secondAttribute="centerX" id="gbp-jn-5Sb"/>
+                            <constraint firstItem="NN4-dw-zRc" firstAttribute="leading" secondItem="PTr-Wl-8Sn" secondAttribute="leading" constant="8" id="lKr-Yh-MEV"/>
+                            <constraint firstAttribute="trailing" secondItem="aHc-Wy-PHQ" secondAttribute="trailing" constant="8" id="nSO-Kg-0py"/>
+                            <constraint firstItem="NN4-dw-zRc" firstAttribute="centerY" secondItem="PTr-Wl-8Sn" secondAttribute="centerY" id="uXP-c2-mju"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="PTr-Wl-8Sn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Go-Af-z6Y"/>
+                <constraint firstAttribute="trailing" secondItem="PTr-Wl-8Sn" secondAttribute="trailing" id="Txa-Xk-9Gh"/>
+                <constraint firstAttribute="bottom" secondItem="PTr-Wl-8Sn" secondAttribute="bottom" id="e5C-Kt-IqS"/>
+                <constraint firstItem="PTr-Wl-8Sn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qX4-3R-TQT"/>
+            </constraints>
+            <connections>
+                <outlet property="chargeDate" destination="z89-pb-hQd" id="atK-se-La3"/>
+                <outlet property="chargeDateTitle" destination="aHc-Wy-PHQ" id="Zdp-cb-jGL"/>
+                <outlet property="chargeNumber" destination="NN4-dw-zRc" id="Rwj-8a-JNe"/>
+                <outlet property="chargeTitle" destination="P5B-LZ-euP" id="Omw-9F-icx"/>
+            </connections>
+            <point key="canvasLocation" x="36.641221374045799" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

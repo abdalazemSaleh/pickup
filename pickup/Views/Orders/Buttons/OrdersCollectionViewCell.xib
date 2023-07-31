@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrdersCollectionViewCell" id="gTV-IL-0wX" customClass="OrdersCollectionViewCell" customModule="pickup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-E7-REw">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلبات حالية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqo-Zf-zc0">
+                                <rect key="frame" x="8" y="8" width="162" height="26"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="zMr-pZ-t2W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.39755917159763315" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-LZ-GJe">
+                                <rect key="frame" x="0.0" y="49" width="178" height="6"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.77647058823529413" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="mPH-g3-OmX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.4549019608" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bqo-Zf-zc0" secondAttribute="trailing" constant="8" id="Kqw-kH-xAc"/>
+                            <constraint firstItem="bqo-Zf-zc0" firstAttribute="top" secondItem="gmU-E7-REw" secondAttribute="top" constant="8" id="MaA-JE-YBx"/>
+                            <constraint firstAttribute="bottom" secondItem="gO6-LZ-GJe" secondAttribute="bottom" id="T6u-il-Mhf"/>
+                            <constraint firstItem="gO6-LZ-GJe" firstAttribute="leading" secondItem="gmU-E7-REw" secondAttribute="leading" id="WDS-uz-kjU"/>
+                            <constraint firstItem="bqo-Zf-zc0" firstAttribute="leading" secondItem="gmU-E7-REw" secondAttribute="leading" constant="8" id="g9t-8k-1cm"/>
+                            <constraint firstAttribute="trailing" secondItem="gO6-LZ-GJe" secondAttribute="trailing" id="lHb-RO-P3H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gmU-E7-REw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SfS-R7-6vd"/>
+                <constraint firstItem="gmU-E7-REw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aVS-P6-7iF"/>
+                <constraint firstAttribute="trailing" secondItem="gmU-E7-REw" secondAttribute="trailing" id="hOY-oc-hkx"/>
+                <constraint firstAttribute="bottom" secondItem="gmU-E7-REw" secondAttribute="bottom" id="qhi-l5-S77"/>
+            </constraints>
+            <size key="customSize" width="178" height="55"/>
+            <connections>
+                <outlet property="orderBackView" destination="gmU-E7-REw" id="xI7-oM-wb1"/>
+                <outlet property="orderLabel" destination="bqo-Zf-zc0" id="8wT-38-4eO"/>
+                <outlet property="orderLine" destination="gO6-LZ-GJe" id="czU-Yx-2zv"/>
+            </connections>
+            <point key="canvasLocation" x="265.64885496183206" y="32.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+</document>

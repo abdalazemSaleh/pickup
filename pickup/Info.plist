@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>the app need an access to your location to identify the nearby captain</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>the app need an access to your location to identify the nearby captain</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>the app need an access to your location to identify the nearby captain</string>
+	<key>NSCameraUsageDescription</key>
+	<string>the app nedds an access to your camera</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>the app needs an access to your library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>the app needs an access to your photo gallery</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

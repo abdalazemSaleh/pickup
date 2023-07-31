@@ -1,0 +1,15 @@
+//
+//  OffersModel.swift
+//  pickup
+//
+//  Created by magdi sherif on 10/07/2023.
+//
+
+import Foundation
+import UIKit
+
+struct Offers {
+    
+    var offerTitle: String
+    var offerDescription: String
+}
